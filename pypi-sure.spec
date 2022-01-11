@@ -4,7 +4,7 @@
 #
 Name     : pypi-sure
 Version  : 2.0.0
-Release  : 74
+Release  : 75
 URL      : https://files.pythonhosted.org/packages/c7/ee/043531858afab5f312ca02867de51189c0c1dd76ba652f1d95ffa13d07f7/sure-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c7/ee/043531858afab5f312ca02867de51189c0c1dd76ba652f1d95ffa13d07f7/sure-2.0.0.tar.gz
 Summary  : utility belt for automated testing in python for python
@@ -15,16 +15,14 @@ Requires: pypi-sure-license = %{version}-%{release}
 Requires: pypi-sure-python = %{version}-%{release}
 Requires: pypi-sure-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : nose
-BuildRequires : pluggy
-BuildRequires : py-python
 BuildRequires : pypi(mock)
+BuildRequires : pypi(nose)
+BuildRequires : pypi(py)
 BuildRequires : pypi(six)
-BuildRequires : pytest
-BuildRequires : python-mock
-BuildRequires : six
-BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 sure
@@ -79,7 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641512778
+export SOURCE_DATE_EPOCH=1641860446
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "

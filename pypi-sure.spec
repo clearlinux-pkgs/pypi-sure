@@ -4,7 +4,7 @@
 #
 Name     : pypi-sure
 Version  : 2.0.0
-Release  : 76
+Release  : 77
 URL      : https://files.pythonhosted.org/packages/c7/ee/043531858afab5f312ca02867de51189c0c1dd76ba652f1d95ffa13d07f7/sure-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c7/ee/043531858afab5f312ca02867de51189c0c1dd76ba652f1d95ffa13d07f7/sure-2.0.0.tar.gz
 Summary  : utility belt for automated testing in python for python
@@ -80,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1653058698
+export SOURCE_DATE_EPOCH=1656369399
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -120,7 +120,7 @@ export FCFLAGS="$FCFLAGS -m64 -march=x86-64-v3 "
 export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3 "
 python3 -tt setup.py build install --root=%{buildroot}-v3
 popd
-/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot}/usr/share/clear/optimized-elf/ %{buildroot}/usr/share/clear/filemap/filemap-%{name}
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)

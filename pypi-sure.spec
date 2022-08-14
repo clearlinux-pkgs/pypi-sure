@@ -4,7 +4,7 @@
 #
 Name     : pypi-sure
 Version  : 2.0.0
-Release  : 78
+Release  : 79
 URL      : https://files.pythonhosted.org/packages/c7/ee/043531858afab5f312ca02867de51189c0c1dd76ba652f1d95ffa13d07f7/sure-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c7/ee/043531858afab5f312ca02867de51189c0c1dd76ba652f1d95ffa13d07f7/sure-2.0.0.tar.gz
 Summary  : utility belt for automated testing in python for python

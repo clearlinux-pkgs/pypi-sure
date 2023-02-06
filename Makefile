@@ -1,5 +1,5 @@
 PKG_NAME := pypi-sure
-URL = https://files.pythonhosted.org/packages/c7/ee/043531858afab5f312ca02867de51189c0c1dd76ba652f1d95ffa13d07f7/sure-2.0.0.tar.gz
+URL = https://files.pythonhosted.org/packages/dd/ae/eb28ee3b6768e51cb938abcf521cb678217203f33385a2df54d3f23331c5/sure-2.0.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
